@@ -1,0 +1,48 @@
+{
+  "name": "ngx-chain-functional-guards",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ngx-chain-functional-guards/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ngx-chain-functional-guards/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ngx-chain-functional-guards/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ngx-chain-functional-guards/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/ngx-chain-functional-guards/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "prettier": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier \"libs/ngx-chain-functional-guards/**/*.{js,ts,json}\" --check"
+      },
+      "configurations": {
+        "write": {
+          "command": "prettier \"libs/ngx-chain-functional-guards/**/*.{js,ts,json}\" --write"
+        }
+      }
+    }
+  },
+  "tags": []
+}

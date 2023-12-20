@@ -7,7 +7,7 @@ import {
   RouterStateSnapshot
 } from '@angular/router'
 
-import { Observable, concatMap, from, last, of, takeWhile } from 'rxjs'
+import { Observable, concatMap, first, from, last, of, takeWhile } from 'rxjs'
 
 /**
  * Helper to transform value to an Observable
@@ -39,7 +39,7 @@ export function chainActivationGuards(
     return from(guards).pipe(
       concatMap(guard => {
         const guardResult = runInInjectionContext(injector, () => guard(route, state))
-        return wrapIntoObservable(guardResult)
+        return wrapIntoObservable(guardResult).pipe(first())
       }),
       takeWhile(val => val === true, true),
       last()
@@ -67,7 +67,7 @@ export function chainDeactivationGuards(guards: CanDeactivateFn<never>[]): CanDe
         const guardResult = runInInjectionContext(injector, () =>
           guard(component, route, state, nextState)
         )
-        return wrapIntoObservable(guardResult)
+        return wrapIntoObservable(guardResult).pipe(first())
       }),
       takeWhile(val => val === true, true),
       last()

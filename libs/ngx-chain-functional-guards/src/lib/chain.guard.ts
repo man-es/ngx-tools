@@ -7,7 +7,7 @@ import {
   RouterStateSnapshot
 } from '@angular/router'
 
-import { concatMap, from, last, Observable, of, takeWhile } from 'rxjs'
+import { Observable, concatMap, from, last, of, takeWhile } from 'rxjs'
 
 /**
  * Helper to transform value to an Observable

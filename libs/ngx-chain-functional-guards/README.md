@@ -1,6 +1,25 @@
+<p style="text-align: center;">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/man-es/ngx-tools/master/images/man-es-ngx-tools-dark.svg">
+    <img alt="Nx - Smart Monorepos · Fast CI" src="https://raw.githubusercontent.com/man-es/ngx-tools/master/images/man-es-ngx-tools-dark.svg" width="100%">
+  </picture>
+</p>
+
+<div style="text-align: center;">
+
+[![License](https://img.shields.io/npm/l/nx.svg?style=flat-square)]()
+[![NPM Version](https://badge.fury.io/js/@man-es%2Fngx-chain-functional-guards.svg)](https://www.npmjs.com/package/nx)
+[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)]()
+
+</div>
+
+<hr>
+
 # Ngx Chain Functional Guards
 
 Ngx Chain Functional Guards is a small library that exposes two functions **chainActivationGuards**  and **chainDeactivationGuards**. Both of these functions allow to run guards in a serial manner, waiting for each one to complete before proceeding to the next.
+
+<hr>
 
 ## Installation
 

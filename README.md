@@ -19,7 +19,6 @@
 
 Welcome to the `ngx-tools` repository! his comprehensive collection of libraries is designed to elevate your Angular development experience.
 
-<hr>
 
 ## Features
 

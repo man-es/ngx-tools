@@ -19,8 +19,6 @@
 
 Ngx Chain Functional Guards is a small library that exposes two functions **chainActivationGuards**  and **chainDeactivationGuards**. Both of these functions allow to run guards in a serial manner, waiting for each one to complete before proceeding to the next.
 
-<hr>
-
 ## Installation
 
 Requires the following peer dependencies:

@@ -23,8 +23,8 @@ Ngx Chain Functional Guards is a small library that exposes two functions **chai
 
 Requires the following peer dependencies:
 
-- @angular/core  (>= 17.0.0)
-- @angular/router  (>= 17.0.0)
+- @angular/core  (>= 18.0.0)
+- @angular/router  (>= 18.0.0)
 - rxjs (>= 7.0.0)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@man-es/ngx-chain-functional-guards",
-  "version": "18.0.0",
+  "version": "19.0.0",
   "description": "An Angular guard that executes functional guards in a serial manner, waiting for each one to complete before proceeding to the next.",
   "keywords": [
     "angular",
@@ -18,8 +18,8 @@
   "license": "MIT",
   "author": "MAN Energy Solutions SE",
   "peerDependencies": {
-    "@angular/core": ">=18.0.0",
-    "@angular/router": ">=18.0.0",
+    "@angular/core": ">=19.0.0",
+    "@angular/router": ">=19.0.0",
     "rxjs": ">=7.0.0"
   },
   "sideEffects": false
